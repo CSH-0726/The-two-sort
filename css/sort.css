@@ -1,0 +1,147 @@
+html,body{
+	width: 100%;
+}
+header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 45px;
+	background: url("../images/header-bg.png") repeat-x;
+	z-index: 10;
+}
+header .search{
+	width: 100%;
+	height: 100%;
+	padding: 0 50px;
+	padding-top: 7px;
+	box-sizing: border-box;
+}
+header input{
+	width: 100%;
+	height: 30px;
+	border-radius: 5px ;
+	border: 1px solid #ccc;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+header .left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 45px;
+	width: 40px;
+	padding: 10px;
+	box-sizing: border-box;
+	background-image: url("../images/jd-sprites.png");
+	background-size: 200px 200px;
+	background-position: -10px 13px;
+	background-clip: content-box;
+}
+header .right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 45px;
+	width: 40px;
+	padding: 10px;
+	box-sizing: border-box;
+	background-image: url("../images/jd-sprites.png");
+	background-size: 200px 200px;
+	background-position: -50px 13px;
+	background-clip: content-box;
+}
+section{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding-top:45px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+aside{
+	width: 90px;
+	height: 100%;
+	/*overflow: hidden;*/
+}
+aside ul{
+	width: 100%;
+	
+}
+aside li{
+width: 100%;
+height: 50px;
+line-height: 50px;
+background-color: #f3f4f6;
+text-align:center;
+border-bottom: 1px solid #ccc;
+border-right: 1px solid #ccc;
+font-size: 13px;
+}
+aside .active{
+	border: none;
+	background-color: #fff;
+	color: red;
+}
+article{
+	flex: 1;
+	padding-left: 15px;
+	padding-right: 10px;
+	overflow-y: auto;
+}
+.art_top{
+	width: 100%;
+}
+article h2{
+	line-height: 50px;
+}
+.art_top ul{
+	width: 100%;
+	overflow: hidden;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.art_top li{
+	width: 33.333%;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.art_guide{
+	width: 100%;
+}
+.art_guide ul{
+	width: 100%;
+	overflow: hidden;
+	/*font-size: 0;*/
+	display: flex;
+	flex-wrap: wrap;
+}
+.art_guide li{
+	width: 33.333%;
+	/*flex: 1;*/
+	
+	/*display: inline-block;*/
+	vertical-align: middle;
+}
+.art_guide a{
+	display: block;
+	width: 100%;
+}
+.art_guide img{
+	/*vertical-align: middle;*/
+	width: 100%;
+}
+.art_guide p{
+	font-size: 10px;
+	text-align: center;
+}
+.art_guide .bottom_padding{
+	padding-bottom: 10px;
+}
